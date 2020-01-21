@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+            android:id="@+id/rl_itembg"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="@dimen/_105sdp"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+           >
+        <TextView
+                android:id="@+id/tv_event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_above="@+id/imgshadow"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/glow">
+
+        </ImageView>
+
+        <ImageView
+                android:id="@+id/imgshadow"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_above="@+id/tv_event_name"
+                android:layout_marginBottom="-9dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shadow"></ImageView>
+      <!--  <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                 android:layout_above="@+id/tv_event_name">-->
+            <ImageView
+                    android:id="@+id/img_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_24sdp"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_32sdp"
+                    android:scaleType="fitCenter"
+
+                    android:gravity="bottom|center"
+                  />
+      <!--  </RelativeLayout>
+--> 
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

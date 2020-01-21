@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.sculptee">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+
+    <application
+            android:allowBackup="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:roundIcon="@mipmap/ic_launcher"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:replace="android:icon,android:theme,android:allowBackup,label"
+            tools:targetApi="n">
+        <activity android:name=".screens.myprofile.MyProfile_Activity"></activity>
+        <activity android:name=".screens.coupons.MYCouponActivity" />
+        <activity android:name=".screens.address.AddressActivity" />
+        <activity android:name=".screens.help.HelpActivity" />
+        <activity android:name=".screens.myorders.MyOrdersActivity" />
+        <activity
+                android:name=".screens.splash.SplashActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".screens.sociallogin.SocialSignActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".screens.home.HomeActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".screens.login.LogInActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".screens.signup.SignUpActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".screens.imageslider.ImageSliderActivity"
+                android:theme="@style/Transparent"
+                android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+                android:name=".screens.cart.CartActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".screens.placeorder.PlaceOrderActivity"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".screens.profile.ProfileActivity"
+                android:screenOrientation="portrait" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/app_icon_noti" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/noticolor" />
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_channel_id"
+                android:value="@string/default_notification_channel_id" />
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

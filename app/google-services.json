@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "280548539287",
+    "firebase_url": "https://sculptee-95d11.firebaseio.com",
+    "project_id": "sculptee-95d11",
+    "storage_bucket": "sculptee-95d11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280548539287:android:1d92af79d6b145c16b62d2",
+        "android_client_info": {
+          "package_name": "com.sculptee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280548539287-fjq9cp1pi96pjle4282jmgvlveivovi6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sculptee",
+            "certificate_hash": "5699ef9bf25be3b32ed78329b7c06d13dc36af9d"
+          }
+        },
+        {
+          "client_id": "280548539287-ioquh1daqrpthta9fmb5c11m05pu6uas.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sculptee",
+            "certificate_hash": "94972dce59d00927e37162acdd0a6982488351ec"
+          }
+        },
+        {
+          "client_id": "280548539287-p7fl1a6e1cqqbhm68f2q0uhllarhc3o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLevwFKPePK8b_Sot-kvj1JUJO7kH0hFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280548539287-p7fl1a6e1cqqbhm68f2q0uhllarhc3o6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "280548539287-4h6b40e9tc5qbmpnuq7rk80lrv9uqndi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.codopoliz.Sculptee"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">Sculptee</string>
+    //login
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="googlesignin">Sign Up With Google+</string>
+    <string name="facebooksignin">Sign Up With Facebook</string>
+    <string name="moblenohint">Mobile no</string>
+    <string name="passwordhint">Password</string>
+    <string name="usernameemail">Email</string>
+
+    //sign up
+    <string name="namehint">Name</string>
+    <string name="emailhint">Email</string>
+
+    //home
+    <string name="choose_event">Choose Your Event</string>
+    <string name="widding_event">WEDDING</string>
+    <string name="aniversary">ANNIVERSARY</string>
+    <string name="reception">RECEPTION</string>
+    <string name="birthday">BIRTHDAY</string>
+    <string name="engagement">ENGAGEMENT</string>
+    <string name="valantine">VALENTINE</string>
+    <string name="todaydeal">Today Deal</string>
+    <string name="orderlist">Order List</string>
+    <string name="shopbyevent">Shop by event</string>
+    <string name="wishlist">Love List</string>
+    <string name="myacccount">My PROFILE</string>
+
+    <string name="faq">FAQ</string>
+    <string name="conatctus">Contact Us</string>
+    <string name="aboutus">About Us</string>
+    <string name="address">Address</string>
+
+
+    //event product list
+    <string name="priceoff">30%OFF</string>
+    <string name="price">87987</string>
+    <string name="avalibility">AVAILABILITY</string>
+    <string name="not_avalible">NOT AVAILABLE</string>
+    <string name="avalible">AVAILABLE</string>
+    <string name="rating">rating</string>
+    <string name="review">Review</string>
+
+    //product details
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="egg_based">Egg-Based</string>
+    <string name="avalible_color">Avalible Color: </string>
+    <string name="flover">Flavour </string>
+    <string name="withsuger">With Suger </string>
+    <string name="weight">Weight: </string>
+    <string name="shape">Shape: </string>
+    <string name="butter">Butter or margarine</string>
+    <string name="cooca">cocoa powder</string>
+    <string name="eggs">Eggs</string>
+    <string name="suger">Suger</string>
+    <string name="floura">Flour</string>
+    <string name="breakingsoda">Breaking Soda</string>
+    <string name="vanilla">Vanilla</string>
+    <string name="milk">Milk</string>
+    <string name="ingradient">Ingradients</string>
+    <string name="description">Description</string>
+    <string name="no360image">Here No 360 image preview avalible</string>
+    <string name="massageoncake">Message on cake(30 characters left)</string>
+    <string name="facebook_app_id">472048633413841</string>
+    <string name="egglass">Egg-less</string>
+    <string name="perpound">/Pound</string>
+
+    <string name="no_item">Coming Soon...</string>
+    <string name="update_cart">UPDATE CART</string>
+    <string name="summery">SUMMARY</string>
+    <string name="product_details">Product details</string>
+    <string name="quentity">QUANTITY</string>
+    <string name="price_">Price</string>
+    <string name="do_you_promocode">Do You have any promocode</string>
+    <string name="sub_total">SubTotal</string>
+    <string name="total"> Grand Total</string>
+    <string name="remtotal">Remaining Total</string>
+
+    <string name="details_billing"> BILLING DETAILS</string>
+    <string name="frist_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="company_name">Company Name(Optional)</string>
+    <string name="countrynmae">Country </string>
+    <string name="street_address">Street Address</string>
+    <string name="town_city">Town/City</string>
+    <string name="state">State/Country</string>
+    <string name="postcode">PostCode/Zip</string>
+    <string name="Additional_info">Additional information</string>
+    <string name="order_note">Order Notes( Optional)</string>
+
+    <string name="shipping_billing"> SHIPPING DETAILS</string>
+    <string name="phno">Phone no:</string>
+    <string name="previous"> &lt;&lt; PREVIOUS</string>
+    <string name="nointernet">No Internet Connection. Please Connect Internet and try again.</string>
+    <string name="default_notification_channel_id">Sculptee_channel</string>
+    <string name="suretodelete">"Are you want to sure delete item from your love list?"</string>
+    <string name="pleasewait">Please wait...</string>
+    <string name="email">E-mail</string>
+    <string name="new_version_avalible">A New Update is Available</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutus_text">Cakes have been adding sweetness to our lives in every occasion. \n Birthdays, Anniversaries, Weddings... every occasion has their own meaning, their own festivity, so every occasion should have cake perfectly suited for it.\n\n
+
+Over the course of decades various artists have been creating their own artwork in making beautiful cakes in various occasions.\n The tradition keeps moving on and in this era sculptors are coming forward to make delightfully beautiful cakes with the same flavour and taste which has been there for centuries.\n
+
+Sculptee brings a communion between sculpture and the artwork of baking cakes in your door steps in just a few clicks.\n Sculptee lets you enjoy your cakes not only with your taste buds but with your eyes as well.
+
+More than 100 cakes based on particular events and themes available in your pocket which are ready to be delivered on your special day.
+
+Accessibility\n\n
+
+* A wide range of cakes are available at your disposal according to Events and Occasions.\n
+* Order your cake in just 2 mins.\n
+* Cakes will be delivery at the venue on the date of the event.\n
+* We never compromise with the taste and the design.\n
+
+360 Degree View of Cakes\n\n
+
+When you have a beautiful body you can flaunt it the way you want. Since we have worked so hard in designing our Cakes, we want people to have a closer look at the very minute details from every possible angle.
+
+This feature gives you the all around visual on your smartphone of how the Cakes are going to look. Just like any 360° photo it just needs a little touch on the right or the left and you will see exactly how the Cake is going to look from all directions.
+
+Why Us ?\n\n
+
+* Each and every ingredients of our cakes are made with products that are mostly organic and has less calories.\n\n
+
+* The process of making cakes involve a series of taste measures that our bakers follow in order to make sure that we retain the same flavor of the cakes that our buyers expect.\n\n
+
+* We have customised delivery trucks in order to make sure that the highly creative scture cakes are never broken down and they retain their original shape and posture.\n\n
+</string>
+
+
+    <string name="contactus">
+        Office Address: \n\n DL 205, DL Block, Sector II, Bidhannagar, Kolkata, West Bengal 700091\n
+        Phone: 033 4008 0601\n\n\n
+
+        Home Address:\n\n  E/58 Baghajatin, Kolkata.Landmark : Near Baghajatin Ram Thakur Ashram\n
+          Pincode : 700086
+    </string>
+
+    <string name="faqtext">
+        Comming soon....
+
+    </string>
+</resources>

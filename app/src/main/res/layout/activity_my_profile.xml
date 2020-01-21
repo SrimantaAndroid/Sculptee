@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/img_top_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_132sdp"
+            android:background="@drawable/myaccount_banner"></ImageView>
+    <ImageView
+            android:id="@+id/img_back_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/left_arrow"></ImageView>
+    <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@mipmap/profile_image"></ImageView>
+    <TextView
+            android:id="@+id/tv_profilenmae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_top_banner"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="Priyam Ghosh"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/img_profile"></TextView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:orientation="vertical"
+            android:layout_below="@+id/img_profile">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/current_order_bg"></TextView>
+        <RelativeLayout
+                android:id="@+id/rl_profileorder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+            <ImageView
+                    android:id="@+id/img_pro_order"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:background="@drawable/profile_order"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    >
+
+            </ImageView>
+            <TextView
+                    android:id="@+id/tv_pro_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/img_pro_order"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="Order"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/tv_order_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_toRightOf="@+id/img_pro_order"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_below="@+id/tv_pro_order"
+                    android:text="Check all our past orders"
+                    />
+
+
+        </RelativeLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/current_order_bg"></TextView>
+
+        <RelativeLayout
+                android:id="@+id/rl_helpcenter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+            <ImageView
+                    android:id="@+id/img_helpcenter"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:background="@drawable/help_center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    >
+
+            </ImageView>
+            <TextView
+                    android:id="@+id/tv_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/img_helpcenter"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="Help Center"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/tv_help_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_toRightOf="@+id/img_helpcenter"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_below="@+id/tv_help"
+                    android:text="Get help all your recent orders"
+                    />
+
+
+        </RelativeLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/current_order_bg"></TextView>
+        <RelativeLayout
+                android:id="@+id/rl_profile_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+            <ImageView
+                    android:id="@+id/img_pro_add"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:background="@drawable/address"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    >
+
+            </ImageView>
+            <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/img_pro_add"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="Address"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/tv_address_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_toRightOf="@+id/img_pro_add"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_below="@+id/tv_address"
+                    android:text="Check all our saved address"
+                    />
+
+
+        </RelativeLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/current_order_bg"></TextView>
+        <RelativeLayout
+                android:id="@+id/rl_mycoupon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+            <ImageView
+                    android:id="@+id/img_mycoupon"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:background="@drawable/profile_order"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    >
+
+            </ImageView>
+            <TextView
+                    android:id="@+id/tv_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/img_mycoupon"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="My Coupons"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/tv_coupon_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_toRightOf="@+id/img_mycoupon"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_below="@+id/tv_coupon"
+                    android:text="Check all our your avaliable Coupons"
+                    />
+
+
+        </RelativeLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/current_order_bg"></TextView>
+        <RelativeLayout
+                android:id="@+id/rl_profile_lovelist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+            <ImageView
+                    android:id="@+id/img_pro_lovelist"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:background="@drawable/profile_love_list"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    >
+
+            </ImageView>
+            <TextView
+                    android:id="@+id/tv_lovelist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/img_pro_lovelist"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="My Love List"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/tv_my_lovelist_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_toRightOf="@+id/img_pro_lovelist"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_below="@+id/tv_lovelist"
+                    android:text="Check all our loved cakes"
+                    />
+
+
+        </RelativeLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/current_order_bg"></TextView>
+        <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+            <ImageView
+                    android:id="@+id/img_pro_manage"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:background="@drawable/profile_manage"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    >
+
+            </ImageView>
+            <TextView
+                    android:id="@+id/tv_manageprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toRightOf="@+id/img_pro_manage"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:text="Profile"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/tv_manageprofile_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_toRightOf="@+id/img_pro_manage"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_below="@+id/tv_manageprofile"
+                    android:text="Manage your details and display information from here"
+                    />
+
+
+        </RelativeLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/current_order_bg"></TextView>
+
+
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menuselectcolor">
+        <Button
+                android:id="@+id/btnlogout"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:text="LOGOUT"
+                android:background="@drawable/rectangle_button_update_cart_"
+                android:layout_centerInParent="true"></Button>
+    </RelativeLayout>
+
+</RelativeLayout>

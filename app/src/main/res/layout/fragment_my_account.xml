@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FULL NAME"></TextView>
+
+        <TextView
+                android:id="@+id/tv_fullnameval"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"></TextView>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gray"></TextView>
+
+
+        <TextView
+                android:id="@+id/mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="MOBILE NO"></TextView>
+
+        <TextView
+                android:id="@+id/tv_mobilenoval"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"></TextView>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/gray"></TextView>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@color/darkgrey">
+            <CheckBox
+                    android:id="@+id/chkchangepassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="   I want to change my password"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:button="@drawable/custom_checkbox"></CheckBox>
+        </RelativeLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:background="@color/lightt_grey"
+                android:orientation="vertical">
+
+            <EditText
+                    android:id="@+id/et_newpassword"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="New password *"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:layout_height="@dimen/_45sdp"></EditText>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/gray"></TextView>
+            <EditText
+                    android:id="@+id/et_confirmnewpassword"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Confirm new password *"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:layout_height="@dimen/_45sdp"></EditText>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/gray"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@color/lightt_grey"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:text="SUBMIT"
+                android:background="@drawable/rectangle_button_update_cart_"
+                android:layout_centerInParent="true"></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

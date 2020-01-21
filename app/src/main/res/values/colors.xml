@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#5C1916</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fff</color>
+    <color name="feild_color">#2E0C0B</color>
+    <color name="btn_color">#FFD990</color>
+    <color name="black">#000</color>
+    <color name="light_green">#29AF00</color>
+    <color name="light_yellow">#f7d005</color>
+    <color name="red">#DA0900</color>
+    <color name="bg_color">#200100</color>
+    <color name="stock_color">#373636</color>
+    <color name="desc_selected_bg">#5c1916</color>
+    <color name="desc_un_elected_bg">#bcb0af</color>
+    <color name="remove_cell_color">#e2e2d0</color>
+    <color name="check_out_bg_color">#F0EFEF</color>
+    <color name="current_order_bg">#dfdfdf</color>
+    <color name="oderheader">#343434</color>
+    <color name="green">#018f47</color>
+    <color name="delieryred">#b31818</color>
+    <color name="menuselectcolor">#e8e1e1</color>
+    <color name="noticolor">#5c1916</color>
+    <color name="cart_bg_color">#EDEDED</color>
+    <color name="carthadercolorcode">#dcdcdc</color>
+    <color name="bottomsheetbtncolor">#FF406C</color>
+    <color name="darkgrey">#d6d6d6</color>
+    <color name="lightt_grey">#ececec</color>
+    <color name="grey">#585755</color>
+    <color name="seek_color1">#9A9A9A</color>
+
+</resources>

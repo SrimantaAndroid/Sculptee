@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rl_zoomimage"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shadoedg">
+            <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/left_arrow"/>
+            <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18sdp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/tv_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@+id/zoom_image"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"/>
+    <com.otaliastudios.zoom.ZoomImageView
+            android:id="@+id/zoom_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical|horizontal"
+            app:transformation="none"
+            app:transformationGravity="auto"
+            app:alignment="center"
+            app:overScrollHorizontal="true"
+            app:overScrollVertical="true"
+            app:overPinchable="true"
+            app:horizontalPanEnabled="true"
+            app:verticalPanEnabled="true"
+            app:zoomEnabled="true"
+            app:flingEnabled="true"
+            app:scrollEnabled="true"
+            app:oneFingerScrollEnabled="true"
+            app:twoFingersScrollEnabled="true"
+            app:threeFingersScrollEnabled="true"
+            app:minZoom="1.0"
+            app:minZoomType="zoom"
+            app:maxZoom="3.0"
+            app:maxZoomType="zoom"
+            android:layout_below="@+id/tv_product_title"
+
+    />
+
+
+</RelativeLayout>

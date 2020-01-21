@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/colorPrimaryDark">
+        <RelativeLayout
+                android:id="@+id/rl_menu"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/imgmenu"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+             android:layout_centerInParent="true"
+
+                android:background="@drawable/menu"/>
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/tv_headertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"/>
+        <ImageView
+                android:id="@+id/img_cart"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/cart"/>
+
+        <TextView
+                android:id="@+id/tv_cart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_22sdp"
+                android:background="@drawable/circle_shape_red"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingRight="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_7sdp"
+                android:visibility="invisible">
+
+        </TextView>
+
+
+    </RelativeLayout>
+    <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

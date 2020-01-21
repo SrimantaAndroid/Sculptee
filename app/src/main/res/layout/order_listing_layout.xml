@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+    <LinearLayout
+            android:id="@+id/llcurrent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:background="@color/current_order_bg">
+        <TextView
+                android:id="@+id/tv_currentorder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="CURRENT ORDER"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:background="@color/oderheader">
+
+        </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_orderlist"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_below="@+id/llcurrent"
+            android:visibility="gone"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/tv_previousorder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="PREVIOUS ORDER"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/oderheader">
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_orderlist_previous"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/down_arrow"></ImageView>
+
+    <TextView
+            android:id="@+id/tv_selquen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select quantity"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+        ></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_sedlectquentity"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv_selquen"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:text="DONE"
+            android:textColor="@color/white"
+            android:layout_below="@+id/rec_sedlectquentity"
+            android:background="@color/colorPrimaryDark"></Button>
+
+
+</RelativeLayout>

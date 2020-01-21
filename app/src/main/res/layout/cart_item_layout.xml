@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="@dimen/_105sdp"
+                  android:orientation="horizontal">
+    <RelativeLayout android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+        <ImageView
+                android:id="@+id/img_product_image"
+                  android:layout_width="match_parent"
+                   android:layout_height="@dimen/_70sdp"
+                   android:layout_marginTop="@dimen/_5sdp"
+                   android:layout_marginRight="@dimen/_5sdp"
+                   android:layout_marginBottom="@dimen/_3sdp"
+                    />
+        
+        <RelativeLayout
+                   android:id="@+id/rl_remove"
+                    android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentBottom="true"
+
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/carthadercolorcode"
+                     >
+            <TextView
+                      android:id="@+id/tv_remove"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_centerInParent="true"
+                      android:textSize="@dimen/_8sdp"
+
+                      android:drawableLeft="@drawable/delete"
+                      android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                      android:drawablePadding="@dimen/_10sdp"
+
+                      android:text="REMOVE"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.8"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp">
+        <TextView
+                android:id="@+id/tv_cake_name"
+                 android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                 android:textSize="@dimen/_11sdp"
+                 android:textColor="@color/black"
+                 android:text="Chocklate nut cake"/>
+        <TextView
+                android:id="@+id/tv_caketype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9sdp"
+                android:text="Type:"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_below="@+id/tv_cake_name"/>
+
+        <TextView
+                android:id="@+id/tv_caketype_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_toRightOf="@+id/tv_caketype"
+                android:layout_below="@+id/tv_cake_name"/>
+
+        <TextView
+            android:id="@+id/tv_flaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_9sdp"
+            android:text="Flavour:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_below="@+id/tv_caketype"/>
+        <TextView
+                android:id="@+id/tv_flaver_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toRightOf="@+id/tv_flaver"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_below="@+id/tv_caketype"/>
+        <RelativeLayout
+                android:id="@+id/rl_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/tv_flaver"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@color/carthadercolorcode">
+            <TextView
+                    android:id="@+id/tv_weigtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="Weight:"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+            <TextView
+                    android:id="@+id/tv_weigtt_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_9sdp"
+                    android:textColor="@color/black"
+                    android:text="1 Pound"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_weigtt"
+                  />
+
+              <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/dwn_arrow"
+                      android:layout_margin="@dimen/_3sdp"
+                      android:layout_toRightOf="@+id/tv_weigtt_val"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_quentity"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/tv_flaver"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_toRightOf="@+id/rl_weight"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/carthadercolorcode">
+            <TextView
+                    android:id="@+id/tv_quentity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="Quantity:"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+            <TextView
+                    android:id="@+id/tv_quentity_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_9sdp"
+
+
+                    android:textColor="@color/black"
+                    android:text="1"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_quentity"
+                    />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/dwn_arrow"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_toRightOf="@+id/tv_quentity_val"></ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_movetolovelist"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_20sdp"
+
+                android:layout_marginRight="@dimen/_5sdp"
+
+                 android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@color/carthadercolorcode"
+                >
+            <TextView
+                    android:id="@+id/tv_movetolovelist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/_8sdp"
+                    android:drawableLeft="@drawable/cart_love_list"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:text="MOVE TO LOVE LIST"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/tv_price_cake"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                android:text="350"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:drawablePadding="@dimen/_2sdp"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/rs_black" />
+
+    </RelativeLayout>
+   <!-- <RelativeLayout android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_5sdp">
+        <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_11sdp"
+                android:text="1" android:layout_marginTop="@dimen/_3sdp" android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_3sdp" android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp"/>
+        <TextView
+                  android:id="@+id/tv_minus"
+                  android:layout_width="@dimen/_21sdp"
+                  android:layout_height="@dimen/_18sdp"
+                  android:layout_toLeftOf="@+id/tv_count"
+                  android:layout_marginRight="@dimen/_5sdp"
+                  android:text="-"
+                  android:gravity="center_horizontal"
+                  android:textSize="@dimen/_14sdp"
+                  android:background="@drawable/reantangle_shape_grey_broder"/>
+
+        <TextView
+                  android:id="@+id/tv_plus"
+                  android:layout_width="@dimen/_21sdp"
+                  android:layout_height="@dimen/_18sdp"
+                  android:layout_toRightOf="@+id/tv_count"
+                  android:layout_marginLeft="@dimen/_5sdp"
+                  android:text="+"
+                  android:gravity="center_horizontal"
+
+                  android:textSize="@dimen/_12sdp"
+                  android:background="@drawable/reantangle_shape_grey_broder"/>
+
+    </RelativeLayout>-->
+    <!--<RelativeLayout android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp">
+        <TextView
+                android:id="@+id/tv_price_cake"
+                  android:layout_width="wrap_content"
+                  android:gravity="center_horizontal"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_11sdp"
+                  android:text="350"
+                  android:drawablePadding="@dimen/_2sdp"
+                  android:layout_centerHorizontal="true"
+                  android:drawableLeft="@drawable/rs_black" />
+
+
+    </RelativeLayout>-->
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="@dimen/_1sdp"
+    android:background="@color/carthadercolorcode"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"/>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#33BBFFFF">
+    <!-- <FrameLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+         <androidx.viewpager.widget.ViewPager
+                 android:id="@+id/view_pager"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginTop="10dp"
+                 android:contentDescription="@null" />
+
+         <ImageView
+                 android:id="@+id/imageview_noimage"
+                 android:layout_width="match_parent"
+                 android:layout_height="400dp"
+                 android:layout_gravity="center"
+                 android:layout_margin="20dp"
+                 android:contentDescription="@null"
+                 android:visibility="visible" />
+
+     </FrameLayout>-->
+    <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:visibility="invisible"
+            android:background="@drawable/shadoedg">
+        <ImageView
+                   android:id="@+id/img_back"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_centerVertical="true"
+                   android:layout_margin="@dimen/_10sdp"
+                   android:background="@drawable/left_arrow"/>
+        <TextView
+                android:id="@+id/tv_product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"/>
+    </RelativeLayout>-->
+
+    <TextView
+            android:id="@+id/tv_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_26sdp"
+            android:layout_above="@+id/viewFlipper"/>
+    <RelativeLayout
+            android:id="@+id/rlviewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/viewFlipper"></RelativeLayout>
+    <ViewFlipper
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_280sdp"
+            android:id="@+id/viewFlipper"
+            android:visibility="invisible"
+            android:layout_centerInParent="true">
+    </ViewFlipper>
+    <androidx.viewpager.widget.ViewPager
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_280sdp"
+            android:id="@+id/viewpager"
+            android:visibility="visible"
+            android:layout_centerInParent="true"/>
+    <com.sculptee.utils.customviewview.ProductShowCaseWebView
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_280sdp"
+            android:id="@+id/product_show"
+            android:visibility="invisible"
+            android:layout_centerInParent="true">
+
+    </com.sculptee.utils.customviewview.ProductShowCaseWebView>
+    <TextView
+            android:id="@+id/tv_loading"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_18sdp"
+            android:gravity="center"
+              android:text="360 Images Preview Loading Please Wait.."/>
+    <RelativeLayout
+            android:id="@+id/rl_slide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_11sdp"
+
+            android:layout_below="@+id/viewFlipper"></RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+android:background="@drawable/loginbg">
+    <RelativeLayout
+            android:id="@+id/rl_backlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/img_back_arrow"
+                android:id="@+id/img_back"></ImageView>
+    </RelativeLayout>
+    <Button
+            android:id="@+id/Btn_login"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_45sdp"
+         android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+           android:layout_centerInParent="true"
+            android:drawableStart="@drawable/login"
+            android:paddingLeft="@dimen/_16sdp"
+
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+         android:background="@drawable/rectangle_button_bg_"/>
+
+    <EditText
+             android:id="@+id/et_password"
+             android:layout_width="match_parent"
+              android:layout_height="@dimen/_47sdp"
+              android:layout_marginBottom="@dimen/_12sdp"
+              android:layout_marginRight="@dimen/_12sdp"
+              android:layout_marginLeft="@dimen/_12sdp"
+              android:background="@drawable/rectangle_feild_bg_"
+              android:layout_above="@+id/Btn_login"
+             android:padding="@dimen/_12sdp"
+             android:hint="@string/passwordhint"
+             android:textColor="@color/white"
+             android:textColorHint="@color/white"
+             android:textSize="@dimen/_12sdp"
+             android:singleLine="true"
+            android:alpha="0.7"
+             android:inputType="textPassword"
+             android:drawableRight="@drawable/password"/>
+
+    <EditText
+            android:id="@+id/et_mobileno"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:background="@drawable/rectangle_feild_bg_"
+            android:layout_above="@+id/et_password"
+            android:padding="@dimen/_12sdp"
+            android:hint="@string/usernameemail"
+            android:alpha="0.7"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:singleLine="true"
+    android:drawableRight="@drawable/name"/>
+
+    <TextView
+            android:id="@+id/tv_login"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+             android:text="@string/login"
+            android:textColor="@color/white"
+            android:layout_above="@+id/et_mobileno"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+       android:textSize="@dimen/_21sdp"/>
+</RelativeLayout>

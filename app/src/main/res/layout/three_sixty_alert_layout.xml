@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+           android:id="@+id/rl_imageslider"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tv_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@+id/viewFlipper"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"/>
+    <ViewFlipper
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewFlipper"
+            android:layout_centerInParent="true">
+
+    </ViewFlipper>
+
+
+</RelativeLayout>

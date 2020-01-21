@@ -1,0 +1,141 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+
+}
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.sculptee"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 6
+        versionName "6.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    /*signingConfigs {
+        release {
+            storeFile file("D:/scluptreekeystore/keystore.jks")
+            storePassword "scluptee"
+            keyAlias "key0"
+            keyPassword "scluptee"
+        }
+    }*/
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    /*bundle {
+        density {
+            // Different APKs are generated for devices with different screen densities; true by default.
+            enableSplit true
+        }
+        abi {
+            // Different APKs are generated for devices with different CPU architectures; true by default.
+            enableSplit true
+        }
+        language {
+            // This is disabled so that the App Bundle does NOT split the APK for each language.
+            // We're gonna use the same APK for all languages.
+            enableSplit false
+        }
+    }*/
+}
+
+dependencies {
+
+    // def room_version = "1.1.1"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.material:material:1.0.0-rc01'
+    implementation "androidx.drawerlayout:drawerlayout:1.0.0"
+    // implementation 'androidx.support:appcompat-v7:28.+'
+    //  implementation 'androidx.support:support-v4:28.0.0'
+
+    implementation project(':commonutils_2_0')
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    kapt 'com.github.bumptech.glide:compiler:4.4.0'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    implementation 'se.akerfeldt:okhttp-signpost:1.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.0.0-RC1'
+    implementation 'oauth.signpost:signpost-core:1.2.1.2'
+    implementation 'com.otaliastudios:zoomlayout:1.6.1'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    //  implementation 'com.google.firebase:firebase-auth:18.1.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.firebase:firebase-core:17.0.1'
+
+    implementation 'com.google.firebase:firebase-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    //  implementation 'com.firebaseui:firebase-ui-auth:5.0.0'
+    //  implementation "org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.2"
+
+    //room
+    // implementation "android.arch.persistence.room:runtime:$room_version"
+    //annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+    // kapt 'androidx.room:room-compiler:2.0.0'
+
+    // Room database
+    def room_version = "2.0.0-beta01"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    kapt 'androidx.room:room-compiler:2.0.0-beta01'
+
+    // Anko Commons
+    implementation "org.jetbrains.anko:anko-commons:0.10.5"
+
+    implementation 'com.payumoney.sdkui:plug-n-play:1.5.0'
+    // implementation 'com.payumoney.core:payumoney-sdk:7.4.4'
+
+    implementation 'com.android.volley:volley:1.1.0'
+
+    //pay u money
+    // implementation 'com.payumoney.core:payumoney-sdk:7.4.4'
+    // implementation  'com.payumoney.sdkui:plug-n-play:1.4.4'
+
+    //seek range bar
+    implementation 'com.github.Mohammed-Alaa:RangeSeekBar:1.0.3'
+    // implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+}
+apply plugin: 'com.google.gms.google-services'

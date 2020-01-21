@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/loginbg">
+    <RelativeLayout
+            android:id="@+id/rl_backsocialsign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/img_back_arrow"
+                android:id="@+id/img_back"></ImageView>
+    </RelativeLayout>
+
+
+<RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+               android:layout_alignParentBottom="true">
+    <TextView
+            android:id="@+id/tv_dash"
+             android:layout_width="@dimen/_1sdp"
+              android:layout_height="match_parent"
+               android:layout_centerInParent="true"
+              android:layout_margin="@dimen/_6sdp"
+              android:background="@color/white"/>
+    <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_toRightOf="@+id/tv_dash"
+              android:gravity="center_vertical"
+              android:text="@string/signup"
+              android:textSize="@dimen/_13sdp"
+              android:textColor="@color/white"
+              android:layout_margin="@dimen/_12sdp"
+    />
+    <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_toLeftOf="@+id/tv_dash"
+              android:gravity="center_vertical|right"
+              android:text="@string/login"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_13sdp"
+              android:layout_margin="@dimen/_12sdp"
+    />
+
+</RelativeLayout>
+    <Button
+            android:id="@+id/btn_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_above="@+id/rl_login"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text="@string/facebooksignin"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/facebook"/>
+
+
+    <com.facebook.login.widget.LoginButton
+           android:id="@+id/fb_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_above="@+id/rl_login"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+    />
+
+
+    <Button
+            android:id="@+id/btn_google"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_above="@+id/btn_facebook"
+            android:layout_margin="@dimen/_12sdp"
+            android:text="@string/googlesignin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"
+            android:background="@drawable/google"/>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout
+            android:id="@+id/rl_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+           android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_5sdp">
+
+    <TextView
+            android:id="@+id/tv_add_type"
+            android:layout_width="wrap_content"
+
+            android:textSize="@dimen/_13sdp"
+            android:text="Work Address"
+
+            android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/tv_deafult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:text="Deafult"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"></TextView>
+        <TextView
+                android:id="@+id/tv_addressname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_add_type"
+                android:text="Priyam ghosh"
+                android:layout_marginTop="@dimen/_3sdp"></TextView>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_streettownaddress"
+                android:layout_below="@+id/tv_addressname"
+                android:text="kolkata"
+                android:layout_marginTop="@dimen/_5sdp"></TextView>
+        <TextView
+                android:id="@+id/tv_statepin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_streettownaddress"
+                android:text="West bengal, 700091"
+                ></TextView>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/gray"
+                android:layout_below="@+id/tv_statepin">
+
+        </TextView>
+        <ImageView
+                android:id="@+id/imgdeleteaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/deleteaddress"
+
+
+                android:layout_below="@+id/tv_deafult"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:layout_alignParentRight="true"></ImageView>
+
+
+        <ImageView
+                android:id="@+id/imgeditaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editaddress"
+               android:layout_below="@+id/tv_deafult"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:layout_toLeftOf="@+id/imgdeleteaddress"
+               ></ImageView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

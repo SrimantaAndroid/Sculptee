@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.about.AboutUsFragment">
+
+
+    <TextView
+            android:id="@+id/tv_aboutustext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_11sdp"
+            android:text="@string/aboutus_text"
+            android:scrollbars = "vertical"
+            ></TextView>
+</RelativeLayout>
