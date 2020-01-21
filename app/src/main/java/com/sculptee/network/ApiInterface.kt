@@ -140,4 +140,7 @@ interface ApiInterface {
     fun deleteddress(@Path("userid") id: String,
                      @Path("address_index")address_index: String):Call<List<AddressModel>>
 
+    @POST(NetworkUrlConstant.INVOICE)
+    fun callinvoice(@Path("id") id:String):Call<ResponseBody>
+
 }

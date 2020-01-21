@@ -34,6 +34,7 @@ class NetworkUrlConstant {
         const val UPDATEADDRESS="sculpteetheme/v1/update-shipping-address"
         const val GETUSERADDRESS="sculpteetheme/v1/get-shipping-address/{userid}"
         const val DELETEADDESS="sculpteetheme/v1/delete-shipping-address/{userid}/{address_index}"
+        const val INVOICE=""
 
     }
 }
